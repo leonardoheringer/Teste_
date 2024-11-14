@@ -1,0 +1,248 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+header {
+    background-color: #8d2de2;
+}
+
+body {
+    background-color: whitesmoke;
+    margin: 0;
+    font-family: "Epilogue", sans-serif;
+    padding-top: 50px; /* Ajustado para reduzir o espaço entre a navbar e o conteúdo */
+    min-height: 100vh; /* Garante que o corpo ocupe toda a altura da tela */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo para a navbar fixa no topo */
+.navbar {
+    background-color: #8d2de2;  /* Fundo transparente */
+    width: 100%;  /* A navbar ocupa toda a largura da tela */
+    position: fixed;  /* Fixa a navbar no topo */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 0.25rem 1rem; /* Menor padding superior e inferior */
+    text-align: center; /* Centraliza o conteúdo da navbar */
+}
+
+/* Ajustes para navbar-expand-lg */
+.navbar-expand-lg {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo da navbar */
+    align-items: center;
+    padding: 5px 0; /* Ajuste do padding superior/inferior para reduzir a altura */
+}
+
+/* Estilo para os itens da navbar */
+.navbar-nav {
+    display: flex;
+    justify-content: center;  /* Centraliza os itens de navegação */
+    flex-grow: 1;
+    gap: 15px;  /* Menor espaçamento entre os itens */
+    align-items: center;  
+}
+
+/* Ajuste nos itens da navbar */
+.nav-item {
+    list-style-type: none;
+    margin: 0 10px;  /* Menor margem entre os itens */
+}
+
+/* Estilo dos links na navbar */
+.nav-link {
+    color: rgb(245, 245, 245); 
+    font-size: medium; /* Menor tamanho de fonte */
+    font-family: "Epilogue", sans-serif;
+    text-decoration: none;
+    padding: 3px 10px; /* Menor padding */
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #5e1b94;  /* Cor quando passar o mouse sobre o link */
+}
+
+/* Logo */
+#Logo {
+    width: 65px; /* Diminuir o tamanho do logo */
+    height: auto;
+}
+/* Estilo do Footer */
+footer {
+    background-color: whitesmoke;
+    width: 100%; /* O footer vai ocupar toda a largura da tela */
+    padding: 10px 0; /* Ajuste de padding para o footer */
+    position: relative; /* Faz o footer se posicionar no final da página */
+    bottom: 0;
+    text-align: center;
+    color: #141414c9;
+    margin-top: auto; /* Faz com que o footer seja empurrado para o final da página */
+    padding-top: 25px;
+}
+
+/* Estilo de um texto básico no footer */
+footer  {
+    
+    font-size: 15px;
+}
+main{
+    padding-top: 35px;
+}
+.container-fluid {
+    display: flex; /* Flexbox para alinhar itens na horizontal */
+    align-items: flex-start; /* Alinha os itens no topo */
+    justify-content: flex-start; /* Alinha os itens à esquerda */
+    gap: 20px; /* Espaço entre a imagem e o card */
+}
+
+/* CSS do card ajustado */
+.card-custom {
+    width: 80%; /* Ajuste o valor para o tamanho desejado */
+    max-width: 1000px; /* Limite máximo para o card */
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 60px;
+    padding: 20px; /* Ajusta o espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas para um visual mais suave */
+    background-color: #fff; /* Cor de fundo do card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Outras regras de estilo para o título e texto */
+.img-esq{
+    padding-top: 80px;
+    padding-left: 100px;
+    width:50%;
+    height: auto;
+    float:left;
+    max-width: 600px;
+} 
+ .titulo {
+    
+    font-size: 80px;              /* Ajusta o tamanho do título */
+    text-align: center;           /* Centraliza o título horizontalmente */
+    width: 25%;                   /* Largura do título */
+    padding: 12px;
+    margin: 10px;                 /* Margem para espaçamento */
+    font-weight: bold;            /* Título em negrito */
+    color: #333;                  /* Cor do título */
+    display: flex;                /* Flexbox para centralizar o conteúdo dentro */
+    justify-content: center;      /* Centraliza horizontalmente */
+    align-items: center;          /* Centraliza verticalmente */
+    box-sizing: border-box;       /* Inclui o padding no cálculo da largura */
+}
+
+ .texto {
+    font-size: 18px;              /* Ajusta o tamanho do texto */
+    line-height: 1.6;             /* Melhor legibilidade */
+    width: 25%;                   /* Largura do texto */
+    padding: 12px;
+    margin: 10px;                 /* Margem para espaçamento */
+    color: #666;                  /* Cor do texto */
+    display: flex;                /* Flexbox para centralizar o conteúdo dentro */
+    justify-content: center;      /* Centraliza horizontalmente */
+    align-items: center;          /* Centraliza verticalmente */
+    box-sizing: border-box;       /* Inclui o padding no cálculo da largura */
+
+}
+
+.titulo
+{ padding-top: 100px;
+    padding-right: 200px;
+    min-height: 200px;
+    width:40%;
+    float: right;
+}
+.texto{
+    padding-top: 100px;
+    padding-right: 200px;
+min-height: 200px;
+width:60%;
+float: left;
+}
+.avaliacao{
+    padding-left: 35px;
+
+    margin-left: 80px;
+    padding-top: 15px;
+    height: 35%;
+    width: 60%;
+}
+.btn{
+margin-top: 10px;
+margin-left: 80px;
+font-size: 30px;
+font-weight: bold;
+width: 400px;
+height: 60px;
+}
+.produto:hover{
+box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra para dar destaque */
+
+}
+.produto {
+    display: flex;
+    height: 710px;
+    width: auto;
+   background-color: white;
+    gap: 20px;
+    padding: 5px;
+    margin-top:5px;
+    margin-right: 150px;
+    margin-left: 150px;
+    border-radius: 10px;
+}
+
+.imagem-produto img  {
+    height: 700px;
+    width: auto;
+    transition: opacity 0.5s;
+    border-radius: 10px;
+ 
+}
+
+.produto-nome.disponivel {
+    
+    padding-top: 100px;
+    padding-left: 80px;
+    color: #000000;
+    font-size: 80px;
+    font-weight: bold;
+   
+}
+
+.produto-nome.indisponivel {
+    color: #888;
+    font-weight: bold;
+}
+
+.produto-preco.disponivel {
+    padding-top: 50px;
+    padding-left: 80px;
+    color: green;
+    font-size: 80px;
+    
+}
+
+.produto-preco.indisponivel {
+    color: #999;
+}
+
+.imagem-produto img.disponivel {
+    opacity: 1;
+}
+
+.imagem-produto img.indisponivel {
+    opacity: 0.5;
+}
+
+.detalhes-produto {
+    display: flex;
+    flex-direction: column;
+}
+#icon-inicio,#icon-prod,#icon-quem,#icon-contato{
+    padding-right:8px ;
+    font-size: 18px;
+}
