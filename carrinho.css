@@ -1,0 +1,274 @@
+.carrinho-imagem {
+    width: 100px;        /* Largura da imagem */
+    height: auto;        /* Manter proporção da imagem */
+    border-radius: 8px;  /* Cantos arredondados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    margin-right: 10px;  /* Espaço à direita para afastar do texto */
+    object-fit: cover;   /* Ajuste para cobrir o contêiner */
+}
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+header {
+    background-color: #8d2de2;
+}
+
+body {
+    background-color: whitesmoke;
+    margin: 0;
+    font-family: "Epilogue", sans-serif;
+    padding-top: 50px; /* Ajustado para reduzir o espaço entre a navbar e o conteúdo */
+    min-height: 100vh; /* Garante que o corpo ocupe toda a altura da tela */
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    background-color: #8d2de2;  /* Fundo transparente */
+    width: 100%;  /* A navbar ocupa toda a largura da tela */
+    position: fixed;  /* Fixa a navbar no topo */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 0.25rem 1rem; /* Menor padding superior e inferior */
+    text-align: center; /* Centraliza o conteúdo da navbar */
+}
+
+/* Ajustes para navbar-expand-lg */
+.navbar-expand-lg {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo da navbar */
+    align-items: center;
+    padding: 5px 0; /* Ajuste do padding superior/inferior para reduzir a altura */
+}
+
+/* Estilo para os itens da navbar */
+.navbar-nav {
+    display: flex;
+    justify-content: center;  /* Centraliza os itens de navegação */
+    flex-grow: 1;
+    gap: 15px;  /* Menor espaçamento entre os itens */
+    align-items: center;  
+}
+
+/* Ajuste nos itens da navbar */
+.nav-item {
+    list-style-type: none;
+    margin: 0 5px;  /* Menor margem entre os itens */
+}
+
+/* Estilo dos links na navbar */
+.nav-link {
+    color: rgb(245, 245, 245); 
+    font-size: medium; /* Menor tamanho de fonte */
+    font-family: "Epilogue", sans-serif;
+    text-decoration: none;
+    padding: 3px 5px; /* Menor padding */
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #5e1b94;  /* Cor quando passar o mouse sobre o link */
+}
+
+/* Logo */
+#Logo {
+    width: 70px; /* Diminuir o tamanho do logo */
+    height: auto;
+}
+/* Estilo do Footer */
+footer {
+    background-color: whitesmoke;
+    width: 100%; /* O footer vai ocupar toda a largura da tela */
+    padding: 10px 0; /* Ajuste de padding para o footer */
+    position: relative; /* Faz o footer se posicionar no final da página */
+    bottom: 0;
+    text-align: center;
+    color: #141414c9;
+    margin-top: auto; /* Faz com que o footer seja empurrado para o final da página */
+    padding-top: 25px;
+}
+
+/* Estilo de um texto básico no footer */
+footer  {
+    
+    font-size: 15px;
+}
+
+
+.img-esq, .img-dir {
+    margin-top: 60px;
+    width: 24%;
+    height: auto;
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    transition: box-shadow 0.3s ease-in-out; /* Efeito suave na sombra ao passar o mouse */
+    margin-left: 15px; /* Distância da borda esquerda */
+    margin-right: 15px;
+}
+
+/* Efeito de sombra ao passar o mouse */
+.img-esq:hover, .img-dir:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra mais forte no hover */
+}
+/* CSS do container com Flexbox */
+#container-fluid {
+    margin-top: 22px;
+    margin-left: auto;  /* Alinha o container à esquerda */
+    margin-right: auto; /* Alinha o container à direita */
+    display: flex;
+    flex-direction: row; /* Mantém o layout lado a lado */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: flex-start; /* Alinha o conteúdo no topo */
+    gap: 20px; /* Espaçamento entre imagem e card */
+    padding: 10px;
+    max-width: 1200px; /* Define a largura máxima para um alinhamento mais uniforme */
+    width: 100%; /* Garante que o container ocupe 100% da largura disponível */
+}
+
+
+
+/* CSS do card ajustado */
+.card-custom {
+    margin-top: 50px;
+    width: 100%;
+    max-width: 900px; /* Limita o tamanho do carrinho */
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centraliza o texto dentro do card */
+    margin-top: 20px;
+}
+/* Outras regras de estilo para o título e texto */
+.card-custom .titulo {
+    padding: 10px;
+    font-size: 60px; /* Ajusta o tamanho do título */
+    text-align: center; /* Centraliza o título */
+}
+
+.card-custom .texto {
+    font-size: 15.5px; /* Ajusta o tamanho do texto */
+    line-height: 1.7; /* Melhor legibilidade */
+}
+#icon-inicio,#icon-prod,#icon-quem,#icon-contato{
+    padding-right:8px ;
+    font-size: 18px;
+}
+
+/* Estilo do card */
+/* Estilo do card */
+.card-container {
+    display: flex;
+    justify-content: flex-start; /* Alinha os itens à esquerda */
+    align-items: center; /* Alinha verticalmente no centro */
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    text-align: left; /* Garante que o texto fique alinhado à esquerda */
+}
+
+.carrinho-imagem {
+    width: 250px; /* Ajuste a largura da imagem */
+    height: auto;
+    margin-right: 15px;
+    
+}
+
+.carrinho-info {
+    display: flex;
+    flex-direction: column; /* Empilha os itens verticalmente */
+    justify-content: center; /* Centraliza o conteúdo dentro da área */
+    gap: 10px; /* Espaçamento entre os itens */
+    flex-grow: 1; /* Faz com que o conteúdo ocupe o restante do espaço */
+}
+.nome-prod{
+    font-size:45px; /* Ajuste o tamanho da fonte para melhor legibilidade */
+    margin: 5px 0; /* Adiciona espaçamento entre as linhas */
+   margin-left: 25px;
+   font-weight: bold;
+}
+
+.preco-prod,
+.quant-prod,
+.total-prod {
+    font-size: 17px; /* Ajuste o tamanho da fonte para melhor legibilidade */
+    margin: 0px 0; /* Adiciona espaçamento entre as linhas */
+   margin-left: 25px;
+   font-weight: bold;
+}
+
+.quantidade-botoes {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+button {
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    
+}
+
+.adicionar-prod{
+    margin-left: 20px;
+}
+.btn-primary {
+    display: flex;            /* Habilita o uso de flexbox dentro do botão */
+    justify-content: center;  /* Centraliza horizontalmente */
+    align-items: center;   
+    width: 65px; 
+    height: 38px;
+    font-size: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+   
+   
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-danger {
+  
+    background-color: #ff4d4d; /* Cor de fundo para o botão "Remover" */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+.btn-danger:hover {
+    background-color: #e60000; /* Cor ao passar o mouse */
+}
+.nome-prod,.preco-prod,.quant-prod,.total-prod{
+    padding-left: 0px;
+}
+.total-produ{
+    background-color: blue;
+}
+.total-carrinho{
+padding-top:10px;
+font-size: 20px;
+font-weight: bold;
+}
+.limpar-car{
+    margin-top: 10px;
+    background-color: blue;
+    color: white;
+}
+.limpar-car:hover{
+    
+    background-color: blue;
+  
+}

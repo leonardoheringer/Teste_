@@ -1,34 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boca</title>
     <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<link rel="stylesheet" href="boca.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="boca.css">
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg" id="nav-bar-cor">
             <div class="container-fluid">
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="Inicio.html"><i class="bi bi-house-fill" id="icon-inicio"></i> INÍCIO</a></li>
+                        <li class="nav-item"><a class="nav-img" href="Inicio.html"><img src="img/Logo.png" id="Logo"
+                            alt="Logo"></a></li>
+                        <li class="nav-item"><a class="nav-link" href="Inicio.html"><i class="bi bi-house-fill"
+                                    id="icon-inicio"></i> INÍCIO</a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="texto_nav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-bag-fill" id="icon-prod"></i>
-                               PRODUTOS
+                            <a class="nav-link dropdown-toggle" id="texto_nav" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-bag-fill"
+                                    id="icon-prod"></i>
+                                PRODUTOS
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" id="texto_nav" href="boca.html" >Boca</a></li>
+                                <li><a class="dropdown-item" id="texto_nav" href="boca.html">Boca</a></li>
                                 <li><a class="dropdown-item" id="texto_nav" href="olhos.html">Olhos</a></li>
                                 <li><a class="dropdown-item" id="texto_nav" href="pele.html">Pele</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-img" href="Inicio.html"><img src="img/Logo.png" id="Logo" alt="Logo"></a></li>
-                        <li class="nav-item"><a class="nav-link" href="quemsomos.html"><i class="bi bi-person-fill" id="icon-quem"></i>QUEM SOMOS</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-person-lines-fill" id="icon-contato"></i>CONTATO</a></li>
+                       
+                        <li class="nav-item"><a class="nav-link" href="quemsomos.html"><i class="bi bi-person-fill"
+                                    id="icon-quem"></i>QUEM SOMOS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contato.html"><i class="bi bi-person-lines-fill"
+                                    id="icon-contato"></i>CONTATO</a></li>
+                        <li class="nav-item"><a class="nav-link" href="carrinho.html"><i class="bi bi-bag-fill"
+                                    id="icon-inicio"></i>CARRINHO</a></li>
+
                     </ul>
                 </div>
             </div>
@@ -36,102 +49,36 @@
     </header>
     <main>
         <div class="container">
-            <h1> <strong>PRODUTOS</strong></h1>
+            <h1 > <strong>PRODUTOS</strong></h1>
             <div class="row">
                 <div class="col-4 g-3">
-                    <div class="card h-100" id="cartao"> 
-                        <a href="compra.html?produto=Batom Roxo&preco=40,00&imagem=img/cards/Baton card.png">
+                    <div class="card h-100" id="cartao">
+                        <a href="#" id="comprar-link"> <!-- A URL será atualizada pelo JavaScript -->
                             <img src="img/cards/Baton card.png" class="card-img-top" alt="Produto 1">
                         </a>
                         <div class="card-body">
                             <h5 class="card-title">Baton</h5>
-                            <p class="card-text">Cores intensas e duradouras para lábios irresistíveis. Escolha seu tom e destaque sua beleza!</p>
-                            <p class="card-text" id="corpocartao">
+                            <p class="card-text">Cores intensas e duradouras para lábios irresistíveis. Escolha seu tom
+                                e destaque sua beleza!</p>
+                            <p class="card-text corpocartao">
                                 De: <span class="preco-antigo">R$ 60,00</span> por:
                             </p>
-                            <p class="card-text" id="corpocartao">
+                            <p class="card-text corpocartao">
                                 <span class="preco-novo">R$ 40,00 à vista</span>
                             </p>
-                            <a href="compra.html?produto=Batom Roxo&preco=40,00&imagem=img/cards/Baton card.png"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <a href="compra.html?produto=Baton&preco=40,00&imagem=img/cards/Baton card.png"><button
+                                type="button" class="btn btn-success" >
                                 Comprar
                             </button></a>
-                            <a href="pagamento.html?produto=Batom Roxo&preco=40,00&imagem=img/cards/Baton card.png"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <button type="button" class="btn btn-primary" onclick="adicionarAoCarrinho({
+                                id: 1,
+                                nome: 'Baton',
+                                preco: 40.00,
+                                imagem: 'img/cards/Baton card.png'
+                            })">
                                 Adicionar ao Carrinho
-                            </button></a>
-                            
-                        </div>
-                       
-                    </div>
-                </div>
-                <div class="col-4 g-3">
-                    <div class="card h-100" id="cartao">
-                        <a href="compra.html?produto=Gloss Roxo&preco=50,00&imagem=img/cards/Gloss card.png">
-                            <img src="img/cards/Gloss card.png" class="card-img-top" alt="Produto 2">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title">Gloss</h5>
-                            <p class="card-text">Brilho radiante e hidratação para lábios sedosos e vibrantes. Perfeito para qualquer ocasião!</p>
-                            <p class="card-text" id="corpocartao">
-                                De: <span class="preco-antigo">R$ 80,00</span> por:
-                            </p>
-                            <p class="card-text" id="corpocartao">
-                                <span class="preco-novo">R$ 50,00 à vista</span>
-                            </p>
-                            <a href="compra.html?produto=Gloss Roxo&preco=50,00&imagem=img/cards/Gloss card.png"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                Comprar
-                            </button></a>
-                            <a href="pagamento.html?produto=Gloss Roxo&preco=50,00&imagem=img/cards/Gloss card.png"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                Adicionar ao Carrinho
-                            </button></a>
-                        </div>
-                       
-                    </div>
-                </div>
-                <div class="col-4 g-3">
-                    <div class="card h-100" id="cartao">
-                        <a href="compra.html?produto=Lip Tint Roxo&preco=40,00&imagem=img/cards/Lip tint card.png">
-                            <img src="img/cards/Lip tint card.png" class="card-img-top" alt="Produto 3">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title">Lip Tint</h5>
-                            <p class="card-text"> Cor natural e duradoura para lábios frescos o dia todo. Toque de cor sem esforço!</p>
-                            <p class="card-text" id="corpocartao">
-                                De: <span class="preco-antigo">R$ 55,00</span> por:
-                            </p>
-                            <p class="card-text" id="corpocartao">
-                                <span class="preco-novo">R$ 40,00 à vista</span>
-                            </p>
-                            <a href="compra.html?produto=Lip Tint Roxo&preco=40,00&imagem=img/cards/Lip tint card.png"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                Comprar
-                            </button></a>
-                         <button onclick="adicionarAoCarrinho(1, 'Lip Tint', 40.00)" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                Adicionar ao Carrinho2
-                               
                             </button>
                         </div>
-                      
-                    </div>
-                </div>
-                <div class="col-4 g-3">
-                    <div class="card h-100" id="cartao"> 
-                        <a href="compra.html?produto=Batom Roxo&preco=40,00&imagem=img/cards/Baton card.png">
-                            <img src="img/cards/Baton card.png" class="card-img-top" alt="Produto 1">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title">Baton</h5>
-                            <p class="card-text">Cores intensas e duradouras para lábios irresistíveis. Escolha seu tom e destaque sua beleza!</p>
-                            <p class="card-text" id="corpocartao">
-                                De: <span class="preco-antigo">R$ 60,00</span> por:
-                            </p>
-                            <p class="card-text" id="corpocartao">
-                                <span class="preco-novo">R$ 40,00 à vista</span>
-                            </p>
-                            <a href="compra.html?produto=Batom Roxo&preco=40,00&imagem=img/cards/Baton card.png"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                Comprar
-                            </button></a>
-                            
-                        </div>
-                       
                     </div>
                 </div>
                 <div class="col-4 g-3">
@@ -141,18 +88,30 @@
                         </a>
                         <div class="card-body">
                             <h5 class="card-title">Gloss</h5>
-                            <p class="card-text">Brilho radiante e hidratação para lábios sedosos e vibrantes. Perfeito para qualquer ocasião!</p>
+                            <p class="card-text">Brilho radiante e hidratação para lábios sedosos e vibrantes. Perfeito
+                                para qualquer ocasião!</p>
                             <p class="card-text" id="corpocartao">
                                 De: <span class="preco-antigo">R$ 80,00</span> por:
                             </p>
                             <p class="card-text" id="corpocartao">
                                 <span class="preco-novo">R$ 50,00 à vista</span>
                             </p>
-                            <a href="compra.html?produto=Gloss Roxo&preco=50,00&imagem=img/cards/Gloss card.png"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                Comprar
-                            </button></a>
+                            <a href="compra.html?produto=Gloss Roxo&preco=50,00&imagem=img/cards/Gloss card.png"><button
+                                    type="button" class="btn btn-success" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    Comprar
+                                </button></a>
+                                <button type="button" class="btn btn-primary" onclick="adicionarAoCarrinho({
+                                    id: 2,
+                                    nome: 'Gloss',
+                                    preco: 50.00,
+                                    imagem: 'img/cards/Gloss card.png'
+                                })">
+                                       Adicionar ao Carrinho
+        
+                                   </button>
                         </div>
-                       
+
                     </div>
                 </div>
                 <div class="col-4 g-3">
@@ -162,40 +121,60 @@
                         </a>
                         <div class="card-body">
                             <h5 class="card-title">Lip Tint</h5>
-                            <p class="card-text"> Cor natural e duradoura para lábios frescos o dia todo. Toque de cor sem esforço!</p>
+                            <p class="card-text"> Cor natural e duradoura para lábios frescos o dia todo. Toque de cor
+                                sem esforço!</p>
                             <p class="card-text" id="corpocartao">
                                 De: <span class="preco-antigo">R$ 55,00</span> por:
                             </p>
                             <p class="card-text" id="corpocartao">
                                 <span class="preco-novo">R$ 40,00 à vista</span>
                             </p>
-                            <a href="compra.html?produto=Lip Tint Roxo&preco=40,00&imagem=img/cards/Lip tint card.png"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                Comprar
-                            </button></a>
+                            <a href="compra.html?produto=Lip Tint Roxo&preco=40,00&imagem=img/cards/Lip tint card.png"><button
+                                    type="button" class="btn btn-primary" >
+                                    Comprar
+                                </button></a>
+                                <button type="button" class="btn btn-primary" onclick="adicionarAoCarrinho({
+                                    id: 3,
+                                    nome: 'Lip Tint',
+                                    preco: 40.00,
+                                    imagem: 'img/cards/Lip tint card.png'
+                                })">
+                                       Adicionar ao Carrinho
+        
+                                   </button>
                         </div>
-                      
+
                     </div>
                 </div>
                 <div class="col-4 g-3">
-                    <div class="card h-100" id="cartao"> 
-                        <a href="compra.html?produto=Batom Roxo&preco=40,00&imagem=img/cards/Baton card.png">
+                    <div class="card h-100" id="cartao">
+                        <a href="#" id="comprar-link"> <!-- A URL será atualizada pelo JavaScript -->
                             <img src="img/cards/Baton card.png" class="card-img-top" alt="Produto 1">
                         </a>
                         <div class="card-body">
                             <h5 class="card-title">Baton</h5>
-                            <p class="card-text">Cores intensas e duradouras para lábios irresistíveis. Escolha seu tom e destaque sua beleza!</p>
-                            <p class="card-text" id="corpocartao">
+                            <p class="card-text">Cores intensas e duradouras para lábios irresistíveis. Escolha seu tom
+                                e destaque sua beleza!</p>
+                            <p class="card-text corpocartao">
                                 De: <span class="preco-antigo">R$ 60,00</span> por:
                             </p>
-                            <p class="card-text" id="corpocartao">
+                            <p class="card-text corpocartao">
                                 <span class="preco-novo">R$ 40,00 à vista</span>
                             </p>
-                            <a href="compra.html?produto=Batom Roxo&preco=40,00&imagem=img/cards/Baton card.png"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                Comprar
-                            </button></a>
-                            
+                            <a href="#" id="comprar-link">
+                                <button type="button" class="btn btn-success">
+                                    Comprar
+                                </button>
+                            </a>
+                            <button type="button" class="btn btn-primary" onclick="adicionarAoCarrinho({
+                                id: 1,
+                                nome: 'Baton',
+                                preco: 40.00,
+                                imagem: 'img/cards/Baton card.png'
+                            })">
+                                Adicionar ao Carrinho
+                            </button>
                         </div>
-                       
                     </div>
                 </div>
                 <div class="col-4 g-3">
@@ -205,18 +184,30 @@
                         </a>
                         <div class="card-body">
                             <h5 class="card-title">Gloss</h5>
-                            <p class="card-text">Brilho radiante e hidratação para lábios sedosos e vibrantes. Perfeito para qualquer ocasião!</p>
+                            <p class="card-text">Brilho radiante e hidratação para lábios sedosos e vibrantes. Perfeito
+                                para qualquer ocasião!</p>
                             <p class="card-text" id="corpocartao">
                                 De: <span class="preco-antigo">R$ 80,00</span> por:
                             </p>
                             <p class="card-text" id="corpocartao">
                                 <span class="preco-novo">R$ 50,00 à vista</span>
                             </p>
-                            <a href="compra.html?produto=Gloss Roxo&preco=50,00&imagem=img/cards/Gloss card.png"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                Comprar
-                            </button></a>
+                            <a href="compra.html?produto=Gloss Roxo&preco=50,00&imagem=img/cards/Gloss card.png"><button
+                                    type="button" class="btn btn-success" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    Comprar
+                                </button></a>
+                                <button type="button" class="btn btn-primary" onclick="adicionarAoCarrinho({
+                                    id: 2,
+                                    nome: 'Gloss',
+                                    preco: 50.00,
+                                    imagem: 'img/cards/Gloss card.png'
+                                })">
+                                       Adicionar ao Carrinho
+        
+                                   </button>
                         </div>
-                       
+
                     </div>
                 </div>
                 <div class="col-4 g-3">
@@ -226,51 +217,172 @@
                         </a>
                         <div class="card-body">
                             <h5 class="card-title">Lip Tint</h5>
-                            <p class="card-text"> Cor natural e duradoura para lábios frescos o dia todo. Toque de cor sem esforço!</p>
+                            <p class="card-text"> Cor natural e duradoura para lábios frescos o dia todo. Toque de cor
+                                sem esforço!</p>
                             <p class="card-text" id="corpocartao">
                                 De: <span class="preco-antigo">R$ 55,00</span> por:
                             </p>
                             <p class="card-text" id="corpocartao">
                                 <span class="preco-novo">R$ 40,00 à vista</span>
                             </p>
-                            <a href="compra.html?produto=Lip Tint Roxo&preco=40,00&imagem=img/cards/Lip tint card.png"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                Comprar
-                            </button></a>
+                            <a href="compra.html?produto=Lip Tint Roxo&preco=40,00&imagem=img/cards/Lip tint card.png"><button
+                                    type="button" class="btn btn-primary" >
+                                    Comprar
+                                </button></a>
+                                <button type="button" class="btn btn-primary" onclick="adicionarAoCarrinho({
+                                    id: 3,
+                                    nome: 'Lip Tint',
+                                    preco: 40.00,
+                                    imagem: 'img/cards/Lip tint card.png'
+                                })">
+                                       Adicionar ao Carrinho
+        
+                                   </button>
                         </div>
-                      
+
                     </div>
                 </div>
+              
+                <div class="col-4 g-3">
+                    <div class="card h-100" id="cartao">
+                        <a href="#" id="comprar-link"> <!-- A URL será atualizada pelo JavaScript -->
+                            <img src="img/cards/Baton card.png" class="card-img-top" alt="Produto 1">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Baton</h5>
+                            <p class="card-text">Cores intensas e duradouras para lábios irresistíveis. Escolha seu tom
+                                e destaque sua beleza!</p>
+                            <p class="card-text corpocartao">
+                                De: <span class="preco-antigo">R$ 60,00</span> por:
+                            </p>
+                            <p class="card-text corpocartao">
+                                <span class="preco-novo">R$ 40,00 à vista</span>
+                            </p>
+                            <a href="#" id="comprar-link">
+                                <button type="button" class="btn btn-success">
+                                    Comprar
+                                </button>
+                            </a>
+                            <button type="button" class="btn btn-primary" onclick="adicionarAoCarrinho({
+                                id: 1,
+                                nome: 'Baton',
+                                preco: 40.00,
+                                imagem: 'img/cards/Baton card.png'
+                            })">
+                                Adicionar ao Carrinho
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 g-3">
+                    <div class="card h-100" id="cartao">
+                        <a href="compra.html?produto=Gloss Roxo&preco=50,00&imagem=img/cards/Gloss card.png">
+                            <img src="img/cards/Gloss card.png" class="card-img-top" alt="Produto 2">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Gloss</h5>
+                            <p class="card-text">Brilho radiante e hidratação para lábios sedosos e vibrantes. Perfeito
+                                para qualquer ocasião!</p>
+                            <p class="card-text" id="corpocartao">
+                                De: <span class="preco-antigo">R$ 80,00</span> por:
+                            </p>
+                            <p class="card-text" id="corpocartao">
+                                <span class="preco-novo">R$ 50,00 à vista</span>
+                            </p>
+                            <a href="compra.html?produto=Gloss Roxo&preco=50,00&imagem=img/cards/Gloss card.png"><button
+                                    type="button" class="btn btn-success" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    Comprar
+                                </button></a>
+                                <button type="button" class="btn btn-primary" onclick="adicionarAoCarrinho({
+                                    id: 2,
+                                    nome: 'Gloss',
+                                    preco: 50.00,
+                                    imagem: 'img/cards/Gloss card.png'
+                                })">
+                                       Adicionar ao Carrinho
+        
+                                   </button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-4 g-3">
+                    <div class="card h-100" id="cartao">
+                        <a href="compra.html?produto=Lip Tint Roxo&preco=40,00&imagem=img/cards/Lip tint card.png">
+                            <img src="img/cards/Lip tint card.png" class="card-img-top" alt="Produto 3">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Lip Tint</h5>
+                            <p class="card-text"> Cor natural e duradoura para lábios frescos o dia todo. Toque de cor
+                                sem esforço!</p>
+                            <p class="card-text" id="corpocartao">
+                                De: <span class="preco-antigo">R$ 55,00</span> por:
+                            </p>
+                            <p class="card-text" id="corpocartao">
+                                <span class="preco-novo">R$ 40,00 à vista</span>
+                            </p>
+                            <a href="compra.html?produto=Lip Tint Roxo&preco=40,00&imagem=img/cards/Lip tint card.png"><button
+                                    type="button" class="btn btn-primary" >
+                                    Comprar
+                                </button></a>
+                                <button type="button" class="btn btn-primary" onclick="adicionarAoCarrinho({
+                                    id: 3,
+                                    nome: 'Lip Tint',
+                                    preco: 40.00,
+                                    imagem: 'img/cards/Lip tint card.png'
+                                })">
+                                       Adicionar ao Carrinho
+        
+                                   </button>
+                        </div>
+
+                    </div>
+                </div>
+              
                 
-            </div> 
-            
+
+            </div>
+
         </div>
     </main>
     <footer>
         <p>© 2024 MARI MADU MAKEUP.</p>
-     </footer>
-     <script>
-        function adicionarAoCarrinho(id, nome, preco) {
+    </footer>
+    <script>
+        function adicionarAoCarrinho(produto) {
             // Obtém o carrinho atual ou cria um novo array vazio
             let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
 
             // Verifica se o produto já existe no carrinho
-            const produtoExistente = carrinho.find(item => item.id === id);
+            const produtoExistente = carrinho.find(item => item.id === produto.id);
 
             if (produtoExistente) {
                 // Se o produto já estiver no carrinho, aumenta a quantidade
                 produtoExistente.quantidade += 1;
             } else {
                 // Caso contrário, adiciona o produto com quantidade 1
-                const produto = { id, nome, preco, quantidade: 1 };
-                carrinho.push(produto);
+                const novoProduto = {
+                    id: produto.id,
+                    nome: produto.nome,
+                    preco: produto.preco,
+                    imagem: produto.imagem,
+                    quantidade: 1
+                };
+                carrinho.push(novoProduto);
             }
 
             // Atualiza o carrinho no localStorage
             localStorage.setItem("carrinho", JSON.stringify(carrinho));
 
-            alert(`Produto ${nome} adicionado ao carrinho!`);
+            alert(`Produto ${produto.nome} adicionado ao carrinho!`);
+            exibirCarrinho(); // Atualiza a exibição do carrinho após adicionar
         }
+
     </script>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

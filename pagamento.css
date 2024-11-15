@@ -1,79 +1,386 @@
-.container {
-  max-width: 960px;
-}
-.bd-placeholder-img {
-  font-size: 1.125rem;
-  text-anchor: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+header {
+    background-color: #8d2de2;
 }
 
-@media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-    font-size: 3.5rem;
+body {
+    background-color: whitesmoke;
+    margin: 0;
+    font-family: "Epilogue", sans-serif;
+    padding-top: 50px; /* Ajustado para reduzir o espaço entre a navbar e o conteúdo */
+    min-height: 100vh; /* Garante que o corpo ocupe toda a altura da tela */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo para a navbar fixa no topo */
+.navbar {
+    background-color: #8d2de2;  /* Fundo transparente */
+    width: 100%;  /* A navbar ocupa toda a largura da tela */
+    position: fixed;  /* Fixa a navbar no topo */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 0.25rem 1rem; /* Menor padding superior e inferior */
+    text-align: center; /* Centraliza o conteúdo da navbar */
+}
+
+/* Ajustes para navbar-expand-lg */
+.navbar-expand-lg {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo da navbar */
+    align-items: center;
+    padding: 5px 0; /* Ajuste do padding superior/inferior para reduzir a altura */
+}
+
+/* Estilo para os itens da navbar */
+.navbar-nav {
+    display: flex;
+    justify-content: center;  /* Centraliza os itens de navegação */
+    flex-grow: 1;
+    gap: 15px;  /* Menor espaçamento entre os itens */
+    align-items: center;  
+}
+
+/* Ajuste nos itens da navbar */
+.nav-item {
+    list-style-type: none;
+    margin: 0 5px;  /* Menor margem entre os itens */
+}
+
+/* Estilo dos links na navbar */
+.nav-link {
+    color: rgb(245, 245, 245); 
+    font-size: medium; /* Menor tamanho de fonte */
+    font-family: "Epilogue", sans-serif;
+    text-decoration: none;
+    padding: 3px 5px; /* Menor padding */
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #5e1b94;  /* Cor quando passar o mouse sobre o link */
+}
+
+/* Logo */
+#Logo {
+    width: 70px; /* Diminuir o tamanho do logo */
+    height: auto;
+}
+/* Estilo do Footer */
+footer {
+    background-color: whitesmoke;
+    width: 100%; /* O footer vai ocupar toda a largura da tela */
+    padding: 10px 0; /* Ajuste de padding para o footer */
+    position: relative; /* Faz o footer se posicionar no final da página */
+    bottom: 0;
+    text-align: center;
+    color: #141414c9;
+    margin-top: auto; /* Faz com que o footer seja empurrado para o final da página */
+    padding-top: 25px;
+}
+
+/* Estilo de um texto básico no footer */
+footer  {
+    
+    font-size: 15px;
+}
+
+
+.img-esq, .img-dir {
+    margin-top: 60px;
+    width: 24%;
+    height: auto;
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    transition: box-shadow 0.3s ease-in-out; /* Efeito suave na sombra ao passar o mouse */
+    margin-left: 15px; /* Distância da borda esquerda */
+    margin-right: 15px;
+}
+
+/* Efeito de sombra ao passar o mouse */
+.img-esq:hover, .img-dir:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra mais forte no hover */
+}
+/* CSS do container com Flexbox */
+.container-fluid {
+    display: flex; /* Flexbox para alinhar itens na horizontal */
+    align-items: flex-start; /* Alinha os itens no topo */
+    justify-content: flex-start; /* Alinha os itens à esquerda */
+    gap: 20px; /* Espaço entre a imagem e o card */
+}
+
+/* CSS do card ajustado */
+.card-custom {
+    width: 100%; /* Ajuste o valor para o tamanho desejado */
+    max-width: 1000px; /* Limite máximo para o card */
+    margin: 60px auto; /* Centraliza o card na página com espaçamento superior */
+    padding: 20px; /* Ajusta o espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas para um visual mais suave */
+    background-color: #fff; /* Cor de fundo do card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo dentro do card */
+    justify-content: center; /* Garante que o conteúdo tenha espaço e fique centralizado */
+}
+
+/* Outras regras de estilo para o título e texto */
+.card-custom .titulo {
+    padding: 10px;
+    font-size: 60px; /* Ajusta o tamanho do título */
+    text-align: center; /* Centraliza o título */
+}
+
+.card-custom .texto {
+    font-size: 15.5px; /* Ajusta o tamanho do texto */
+    line-height: 1.7; /* Melhor legibilidade */
+}
+#icon-inicio,#icon-prod,#icon-quem,#icon-contato{
+    padding-right:8px ;
+    font-size: 18px;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+.produto-preco.disponivel {
+  padding-top: 50px;
+  padding-left: 80px;
+  color: green;
+  font-size: 80px;
+  
+}
+.imagem-produto img  {
+  height: 700px;
+  width: auto;
+  transition: opacity 0.5s;
+  border-radius: 10px;
+
+}
+
+.produto-nome.disponivel {
+  
+  padding-top: 100px;
+  padding-left: 80px;
+  color: #000000;
+  font-size: 80px;
+  font-weight: bold;
+}
+.produto:hover{
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra para dar destaque */
+  
   }
+  .produto {
+      display: flex;
+      height: 800px;
+      width: auto;
+     background-color: white;
+      gap: 20px;
+      padding: 5px;
+      margin-top:5px;
+      margin-right: 150px;
+      margin-left: 150px;
+      border-radius: 10px;
+  }
+  .avaliacao{
+    padding-left: 35px;
+
+    margin-left: 80px;
+    padding-top: 15px;
+    height: 35%;
+    width: 60%;
+}
+.btn{
+margin-top: 10px;
+margin-left: 80px;
+font-size: 30px;
+font-weight: bold;
+width: 400px;
+height: 60px;
+}
+.produto:hover{
+box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra para dar destaque */
+
+}
+.produto {
+    display: flex;
+    height: 710px;
+    width: auto;
+   background-color: white;
+    gap: 20px;
+    padding: 5px;
+    margin-top:5px;
+    margin-right: 150px;
+    margin-left: 150px;
+    border-radius: 10px;
 }
 
-.b-example-divider {
-  width: 100%;
-  height: 3rem;
-  background-color: rgba(0, 0, 0, .1);
-  border: solid rgba(0, 0, 0, .15);
-  border-width: 1px 0;
-  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+.imagem-produto img  {
+    height: 700px;
+    width: auto;
+    transition: opacity 0.5s;
+    border-radius: 10px;
+ 
 }
 
-.b-example-vr {
-  flex-shrink: 0;
-  width: 1.5rem;
-  height: 100vh;
+#produto-nome {
+    
+    padding-top: 100px;
+    padding-left: 80px;
+    color: #000000;
+    font-size: 80px;
+    font-weight: bold;
+   
 }
 
-.bi {
-  vertical-align: -.125em;
-  fill: currentColor;
+.produto-nome.indisponivel {
+    color: #888;
+    font-weight: bold;
 }
 
-.nav-scroller {
-  position: relative;
-  z-index: 2;
-  height: 2.75rem;
-  overflow-y: hidden;
+#produto-preco {
+    padding-top: 50px;
+    padding-left: 80px;
+    color: green;
+    font-size: 80px;
+    
 }
 
-.nav-scroller .nav {
-  display: flex;
-  flex-wrap: nowrap;
-  padding-bottom: 1rem;
-  margin-top: -1px;
-  overflow-x: auto;
-  text-align: center;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
+.produto-preco.indisponivel {
+    color: #999;
 }
 
-.btn-bd-primary {
-  --bd-violet-bg: #712cf9;
-  --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
-
-  --bs-btn-font-weight: 600;
-  --bs-btn-color: var(--bs-white);
-  --bs-btn-bg: var(--bd-violet-bg);
-  --bs-btn-border-color: var(--bd-violet-bg);
-  --bs-btn-hover-color: var(--bs-white);
-  --bs-btn-hover-bg: #6528e0;
-  --bs-btn-hover-border-color: #6528e0;
-  --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-  --bs-btn-active-color: var(--bs-btn-hover-color);
-  --bs-btn-active-bg: #5a23c8;
-  --bs-btn-active-border-color: #5a23c8;
+.imagem-produto img.disponivel {
+    opacity: 1;
 }
 
-.bd-mode-toggle {
-  z-index: 1500;
+.imagem-produto img.indisponivel {
+    opacity: 0.5;
 }
 
-.bd-mode-toggle .dropdown-menu .active .bi {
-  display: block !important;
+.detalhes-produto {
+    display: flex;
+    flex-direction: column;
+}
+#icon-inicio,#icon-prod,#icon-quem,#icon-contato{
+    padding-right:8px ;
+    font-size: 18px;
+}
+
+#produto-preco{
+    font-size: 50px;
+}
+/* Estilo para quando o produto está disponível */
+.produto-disponivel {
+    background-color: #ffffff; /* Fundo branco quando disponível */
+}
+
+.produto-nome-disponivel {
+    color: #000000;  /* Cor preta para o nome do produto */
+    font-weight: bold;
+}
+
+.produto-preco-disponivel {
+    color: green; /* Preço verde para produtos disponíveis */
+    font-size: 50px;
+}
+
+.imagem-produto img.disponivel {
+    opacity: 1;
+}
+
+/* Estilo para quando o produto está indisponível */
+.produto-indisponivel {
+    background-color: #f8d7da; /* Fundo vermelho claro para indicar erro */
+}
+
+.produto-nome-indisponivel {
+    color: #888888;  /* Cor cinza para o nome quando indisponível */
+    font-weight: normal;
+}
+
+.produto-preco-indisponivel {
+    color: #999999; /* Preço cinza para produtos indisponíveis */
+}
+
+.imagem-produto img.indisponivel {
+    opacity: 0.5; /* Diminui a opacidade para indicar indisponível */
+}
+
+/* Outros estilos gerais */
+.produto {
+    display: flex;
+    height: 260px;
+    width: auto;
+    background-color: white;
+    gap: 20px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-right: 150px;
+    margin-left: 150px;
+    border-radius: 10px;
+}
+
+.imagem-produto img {
+    height: 250px;
+    width: auto;
+    transition: opacity 0.5s;
+    border-radius: 10px;
+}
+
+#produto-nome {
+    padding-top: 10px;
+    padding-left: 8px;
+    color: #000000;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#produto-preco {
+    padding-top: 5px;
+    padding-left: 8px;
+    color: green;
+    font-size: 40px;
 }

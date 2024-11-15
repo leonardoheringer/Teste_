@@ -1,24 +1,55 @@
 
+function adicionarAoCarrinho(id, nome, preco, imagem) {
+    // Obtém o carrinho atual ou cria um novo array vazio
+    let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+
+    // Verifica se o produto já existe no carrinho
+    const produtoExistente = carrinho.find(item => item.id === id);
+
+    if (produtoExistente) {
+        // Se o produto já estiver no carrinho, aumenta a quantidade
+        produtoExistente.quantidade += 1;
+    } else {
+        // Caso contrário, adiciona o produto com quantidade 1 e imagem
+        const produto = { id, nome, preco, imagem, quantidade: 1 };
+        carrinho.push(produto);
+    }
+
+    // Atualiza o carrinho no localStorage
+    localStorage.setItem("carrinho", JSON.stringify(carrinho));
+
+    alert(`Produto ${nome} adicionado ao carrinho!`);
+    exibirCarrinho(); // Atualiza a exibição do carrinho após adicionar
+}
+
 function exibirCarrinho() {
     const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
     const listaCarrinho = document.getElementById("lista-carrinho");
     listaCarrinho.innerHTML = ''; // Limpa a lista antes de exibir os itens
 
-    carrinho.forEach((item, index) => {
+    
+    carrinho.forEach((item) => {
         const card = document.createElement("div");
         card.classList.add("card");
 
-        // Exibe os detalhes do produto
+        // Exibe os detalhes do produto com a imagem
         card.innerHTML = `
-            <h2>${item.nome}</h2>
-            <p>Preço: R$${item.preco.toFixed(2)}</p>
-            <p>Quantidade: ${item.quantidade}</p>
-            <p>Total: R$${(item.preco * item.quantidade).toFixed(2)}</p>
-            <button onclick="atualizarQuantidade(${item.id}, ${item.quantidade + 1})">+</button>
-            <button onclick="atualizarQuantidade(${item.id}, ${item.quantidade - 1})">-</button>
-            <button onclick="removerItemDoCarrinho(${item.id})">Remover</button>
-        `;
-
+        <div class="card-container">
+            <img src="${item.imagem}" alt="${item.nome}" class="carrinho-imagem">
+            <div class="carrinho-info">
+                <h2 class="nome-prod">${item.nome}</h2>
+                <p class="preco-prod">Preço: R$${item.preco.toFixed(2)}</p>
+                <p class="quant-prod">Quantidade: ${item.quantidade}</p>
+                <p class="total-prod">Total: R$${(item.preco * item.quantidade).toFixed(2)}</p>
+                <div class="quantidade-botoes">
+                    <button class="adicionar-prod btn btn-primary" onclick="atualizarQuantidade(${item.id}, ${item.quantidade + 1})">+</button>
+                    <button class="subtrair-prod btn btn-primary" onclick="atualizarQuantidade(${item.id}, ${item.quantidade - 1})">-</button>
+                    <button class="remover-prod btn btn-danger" onclick="removerItemDoCarrinho(${item.id})">Remover</button>
+                </div>
+            </div>
+        </div>
+    `;
+    
         listaCarrinho.appendChild(card);
     });
 

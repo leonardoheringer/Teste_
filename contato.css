@@ -1,0 +1,201 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+header {
+    background-color: #8d2de2;
+}
+
+body {
+    background-color: whitesmoke;
+    margin: 0;
+    font-family: "Epilogue", sans-serif;
+    padding-top: 50px; /* Ajustado para reduzir o espaço entre a navbar e o conteúdo */
+    min-height: 100vh; /* Garante que o corpo ocupe toda a altura da tela */
+    display: flex;
+    flex-direction: column;
+
+
+
+    margin: 0;
+    padding: 0;
+    
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Estilo para a navbar fixa no topo */
+.navbar {
+    background-color: #8d2de2;  /* Fundo transparente */
+    width: 100%;  /* A navbar ocupa toda a largura da tela */
+    position: fixed;  /* Fixa a navbar no topo */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 0.25rem 1rem; /* Menor padding superior e inferior */
+    text-align: center; /* Centraliza o conteúdo da navbar */
+}
+
+/* Ajustes para navbar-expand-lg */
+.navbar-expand-lg {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo da navbar */
+    align-items: center;
+    padding: 5px 0; /* Ajuste do padding superior/inferior para reduzir a altura */
+}
+
+/* Estilo para os itens da navbar */
+.navbar-nav {
+    display: flex;
+    justify-content: center;  /* Centraliza os itens de navegação */
+    flex-grow: 1;
+    gap: 15px;  /* Menor espaçamento entre os itens */
+    align-items: center;  
+}
+
+/* Ajuste nos itens da navbar */
+.nav-item {
+    list-style-type: none;
+    margin: 0 5px;  /* Menor margem entre os itens */
+}
+
+/* Estilo dos links na navbar */
+.nav-link {
+    color: rgb(245, 245, 245); 
+    font-size: medium; /* Menor tamanho de fonte */
+    font-family: "Epilogue", sans-serif;
+    text-decoration: none;
+    padding: 3px 5px; /* Menor padding */
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #5e1b94;  /* Cor quando passar o mouse sobre o link */
+}
+
+/* Logo */
+#Logo {
+    width: 70px; /* Diminuir o tamanho do logo */
+    height: auto;
+}
+/* Estilo do Footer */
+footer {
+    background-color: whitesmoke;
+    width: 100%; /* O footer vai ocupar toda a largura da tela */
+    padding: 10px 0; /* Ajuste de padding para o footer */
+    position: relative; /* Faz o footer se posicionar no final da página */
+    bottom: 0;
+    text-align: center;
+    color: #141414c9;
+    margin-top: auto; /* Faz com que o footer seja empurrado para o final da página */
+    padding-top: 25px;
+}
+
+/* Estilo de um texto básico no footer */
+footer  {
+    
+    font-size: 15px;
+}
+
+
+.img-esq, .img-dir {
+    margin-top: 60px;
+    width: 24%;
+    height: auto;
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    transition: box-shadow 0.3s ease-in-out; /* Efeito suave na sombra ao passar o mouse */
+    margin-left: 15px; /* Distância da borda esquerda */
+    margin-right: 15px;
+}
+
+/* Efeito de sombra ao passar o mouse */
+.img-esq:hover, .img-dir:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra mais forte no hover */
+}
+/* CSS do container com Flexbox */
+.container-fluid {
+    display: flex; /* Flexbox para alinhar itens na horizontal */
+    align-items: flex-start; /* Alinha os itens no topo */
+    justify-content: flex-start; /* Alinha os itens à esquerda */
+    gap: 20px; /* Espaço entre a imagem e o card */
+}
+
+/* CSS do card ajustado */
+.card-custom {
+    width: 75%; /* Ajuste o valor para o tamanho desejado */
+    max-width: 1000px; /* Limite máximo para o card */
+    margin-top: 60px;
+    margin-left: 45px;
+    margin-right: 45px;
+    padding: 20px; /* Ajusta o espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas para um visual mais suave */
+    background-color: #fff; /* Cor de fundo do card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Outras regras de estilo para o título e texto */
+.card-custom .titulo {
+    padding: 10px;
+    font-size: 60px; /* Ajusta o tamanho do título */
+    text-align: center; /* Centraliza o título */
+}
+
+.card-custom .texto {
+    font-size: 15.5px; /* Ajusta o tamanho do texto */
+    line-height: 1.7; /* Melhor legibilidade */
+}
+#icon-inicio,#icon-prod,#icon-quem,#icon-contato{
+    padding-right:8px ;
+    font-size: 18px;
+}
+.form-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px; /* Ajuste para bordas arredondadas suaves */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 1200px;
+    max-width: 1500px;
+    margin: 0 auto; /* Centraliza o formulário na página */
+}
+
+.form-container h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 50px;
+    color: #333;
+    text-align: center;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.form-group textarea {
+    resize: vertical;
+    height: 100px;
+}
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.form-group button:hover {
+    background-color: #4cae4c;
+}

@@ -47,7 +47,7 @@ body {
 /* Ajuste nos itens da navbar */
 .nav-item {
     list-style-type: none;
-    margin: 0 10px;  /* Menor margem entre os itens */
+    margin: 0 5px;  /* Menor margem entre os itens */
 }
 
 /* Estilo dos links na navbar */
@@ -56,7 +56,7 @@ body {
     font-size: medium; /* Menor tamanho de fonte */
     font-family: "Epilogue", sans-serif;
     text-decoration: none;
-    padding: 3px 10px; /* Menor padding */
+    padding: 3px 5px; /* Menor padding */
     transition: color 0.3s ease;
 }
 
@@ -66,7 +66,7 @@ body {
 
 /* Logo */
 #Logo {
-    width: 65px; /* Diminuir o tamanho do logo */
+    width: 70px; /* Diminuir o tamanho do logo */
     height: auto;
 }
 /* Estilo do Footer */
@@ -179,7 +179,7 @@ width: 400px;
 height: 60px;
 }
 .produto:hover{
-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra para dar destaque */
+
 
 }
 .produto {
@@ -203,7 +203,7 @@ box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra para dar destaque */
  
 }
 
-.produto-nome.disponivel {
+#produto-nome {
     
     padding-top: 100px;
     padding-left: 80px;
@@ -218,7 +218,7 @@ box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra para dar destaque */
     font-weight: bold;
 }
 
-.produto-preco.disponivel {
+#produto-preco {
     padding-top: 50px;
     padding-left: 80px;
     color: green;
@@ -245,4 +245,80 @@ box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra para dar destaque */
 #icon-inicio,#icon-prod,#icon-quem,#icon-contato{
     padding-right:8px ;
     font-size: 18px;
+}
+
+#produto-preco{
+    font-size: 50px;
+}
+/* Estilo para quando o produto está disponível */
+.produto-disponivel {
+    background-color: #ffffff; /* Fundo branco quando disponível */
+}
+
+.produto-nome-disponivel {
+    color: #000000;  /* Cor preta para o nome do produto */
+    font-weight: bold;
+}
+
+.produto-preco-disponivel {
+    color: green; /* Preço verde para produtos disponíveis */
+    font-size: 50px;
+}
+
+.imagem-produto img.disponivel {
+    opacity: 1;
+}
+
+/* Estilo para quando o produto está indisponível */
+.produto-indisponivel {
+    background-color: #f8d7da; /* Fundo vermelho claro para indicar erro */
+}
+
+.produto-nome-indisponivel {
+    color: #888888;  /* Cor cinza para o nome quando indisponível */
+    font-weight: normal;
+}
+
+.produto-preco-indisponivel {
+    color: #999999; /* Preço cinza para produtos indisponíveis */
+}
+
+.imagem-produto img.indisponivel {
+    opacity: 0.5; /* Diminui a opacidade para indicar indisponível */
+}
+
+/* Outros estilos gerais */
+.produto {
+    display: flex;
+    height: 710px;
+    width: auto;
+    background-color: white;
+    gap: 20px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-right: 150px;
+    margin-left: 150px;
+    border-radius: 10px;
+}
+
+.imagem-produto img {
+    height: 700px;
+    width: auto;
+    transition: opacity 0.5s;
+    border-radius: 10px;
+}
+
+#produto-nome {
+    padding-top: 100px;
+    padding-left: 80px;
+    color: #000000;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+#produto-preco {
+    padding-top: 50px;
+    padding-left: 80px;
+    color: green;
+    font-size: 80px;
 }

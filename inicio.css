@@ -49,7 +49,7 @@ body {
 /* Ajuste nos itens da navbar */
 .nav-item {
     list-style-type: none;
-    margin: 0 10px;  /* Menor margem entre os itens */
+    margin: 0 5px;  /* Menor margem entre os itens */
 }
 
 /* Estilo dos links na navbar */
@@ -58,7 +58,7 @@ body {
     font-size: medium; /* Menor tamanho de fonte */
     font-family: "Epilogue", sans-serif;
     text-decoration: none;
-    padding: 3px 10px; /* Menor padding */
+    padding: 3px 5px; /* Menor padding */
     transition: color 0.3s ease;
 }
 
@@ -68,10 +68,9 @@ body {
 
 /* Logo */
 #Logo {
-    width: 65px; /* Diminuir o tamanho do logo */
+    width: 70px; /* Diminuir o tamanho do logo */
     height: auto;
 }
-
 
 
 .carousel-inner {

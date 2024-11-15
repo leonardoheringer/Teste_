@@ -15,20 +15,30 @@
             <div class="container-fluid">
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="Inicio.html"><i class="bi bi-house-fill" id="icon-inicio"></i> INÍCIO</a></li>
+                        <li class="nav-item"><a class="nav-img" href="Inicio.html"><img src="img/Logo.png" id="Logo"
+                            alt="Logo"></a></li>
+                        <li class="nav-item"><a class="nav-link" href="Inicio.html"><i class="bi bi-house-fill"
+                                    id="icon-inicio"></i> INÍCIO</a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="texto_nav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-bag-fill" id="icon-prod"></i>
-                               PRODUTOS
+                            <a class="nav-link dropdown-toggle" id="texto_nav" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-bag-fill"
+                                    id="icon-prod"></i>
+                                PRODUTOS
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" id="texto_nav" href="boca.html" >Boca</a></li>
+                                <li><a class="dropdown-item" id="texto_nav" href="boca.html">Boca</a></li>
                                 <li><a class="dropdown-item" id="texto_nav" href="olhos.html">Olhos</a></li>
                                 <li><a class="dropdown-item" id="texto_nav" href="pele.html">Pele</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-img" href="Inicio.html"><img src="img/Logo.png" id="Logo" alt="Logo"></a></li>
-                        <li class="nav-item"><a class="nav-link" href="quemsomos.html"><i class="bi bi-person-fill" id="icon-quem"></i>QUEM SOMOS</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-person-lines-fill" id="icon-contato"></i>CONTATO</a></li>
+                       
+                        <li class="nav-item"><a class="nav-link" href="quemsomos.html"><i class="bi bi-person-fill"
+                                    id="icon-quem"></i>QUEM SOMOS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contato.html"><i class="bi bi-person-lines-fill"
+                                    id="icon-contato"></i>CONTATO</a></li>
+                        <li class="nav-item"><a class="nav-link" href="carrinho.html"><i class="bi bi-bag-fill"
+                                    id="icon-inicio"></i>CARRINHO</a></li>
+
                     </ul>
                 </div>
             </div>
@@ -52,9 +62,19 @@
                             <p class="card-text" id="corpocartao">
                                 <span class="preco-novo">R$ 60,00 à vista</span>
                             </p>
-                            <a href="compra.html?produto=Pó Compacto&preco=60,00&imagem=img/cards/Pó card.png"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <a href="compra.html?produto=Pó Compacto&preco=60,00&imagem=img/cards/Pó card.png"><button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 Comprar
                             </button></a>
+                        </button></a>
+                        <button type="button" class="btn btn-primary" onclick="adicionarAoCarrinho({
+                            id: 7,
+                            nome: 'Pó Compacto',
+                            preco: 60.00,
+                            imagem: 'img/cards/Pó card.png'
+                        })">
+                               Adicionar ao Carrinho
+
+                           </button>
                             
                         </div>
                        
@@ -74,9 +94,19 @@
                             <p class="card-text" id="corpocartao">
                                 <span class="preco-novo">R$ 45,00 à vista</span>
                             </p>
-                            <a href="compra.html?produto=Base&preco=45,00&imagem=img/cards/Base card.png"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <a href="compra.html?produto=Base&preco=45,00&imagem=img/cards/Base card.png"><button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 Comprar
                             </button></a>
+                        </button></a>
+                        <button type="button" class="btn btn-primary" onclick="adicionarAoCarrinho({
+                            id: 8,
+                            nome: 'Base',
+                            preco: 45.00,
+                            imagem: 'img/cards/Base card.png'
+                        })">
+                               Adicionar ao Carrinho
+
+                           </button>
                         </div>
                        
                     </div>
@@ -95,9 +125,19 @@
                             <p class="card-text" id="corpocartao">
                                 <span class="preco-novo">R$ 40,00 à vista</span>
                             </p>
-                            <a href="compra.html?produto=Corretivo&preco=40,00&imagem=img/cards/Corretivo card.png"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <a href="compra.html?produto=Corretivo&preco=40,00&imagem=img/cards/Corretivo card.png"><button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 Comprar
                             </button></a>
+                        </button></a>
+                        <button type="button" class="btn btn-primary" onclick="adicionarAoCarrinho({
+                            id: 9,
+                            nome: 'Corretivo',
+                            preco: 40.00,
+                            imagem: 'img/cards/Corretivo card.png'
+                        })">
+                               Adicionar ao Carrinho
+
+                           </button>
                         </div>
                       
                     </div>
@@ -116,9 +156,19 @@
                             <p class="card-text" id="corpocartao">
                                 <span class="preco-novo">R$ 60,00 à vista</span>
                             </p>
-                            <a href="compra.html?produto=Pó Compacto&preco=60,00&imagem=img/cards/Pó card.png"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <a href="compra.html?produto=Pó Compacto&preco=60,00&imagem=img/cards/Pó card.png"><button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 Comprar
                             </button></a>
+                        </button></a>
+                        <button type="button" class="btn btn-primary" onclick="adicionarAoCarrinho({
+                            id: 7,
+                            nome: 'Pó Compacto',
+                            preco: 60.00,
+                            imagem: 'img/cards/Pó card.png'
+                        })">
+                               Adicionar ao Carrinho
+
+                           </button>
                             
                         </div>
                        
@@ -138,9 +188,19 @@
                             <p class="card-text" id="corpocartao">
                                 <span class="preco-novo">R$ 45,00 à vista</span>
                             </p>
-                            <a href="compra.html?produto=Base&preco=45,00&imagem=img/cards/Base card.png"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <a href="compra.html?produto=Base&preco=45,00&imagem=img/cards/Base card.png"><button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 Comprar
                             </button></a>
+                        </button></a>
+                        <button type="button" class="btn btn-primary" onclick="adicionarAoCarrinho({
+                            id: 8,
+                            nome: 'Base',
+                            preco: 45.00,
+                            imagem: 'img/cards/Base card.png'
+                        })">
+                               Adicionar ao Carrinho
+
+                           </button>
                         </div>
                        
                     </div>
@@ -159,9 +219,19 @@
                             <p class="card-text" id="corpocartao">
                                 <span class="preco-novo">R$ 40,00 à vista</span>
                             </p>
-                            <a href="compra.html?produto=Corretivo&preco=40,00&imagem=img/cards/Corretivo card.png"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <a href="compra.html?produto=Corretivo&preco=40,00&imagem=img/cards/Corretivo card.png"><button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 Comprar
                             </button></a>
+                        </button></a>
+                        <button type="button" class="btn btn-primary" onclick="adicionarAoCarrinho({
+                            id: 9,
+                            nome: 'Corretivo',
+                            preco: 40.00,
+                            imagem: 'img/cards/Corretivo card.png'
+                        })">
+                               Adicionar ao Carrinho
+
+                           </button>
                         </div>
                       
                     </div>
@@ -180,9 +250,19 @@
                             <p class="card-text" id="corpocartao">
                                 <span class="preco-novo">R$ 60,00 à vista</span>
                             </p>
-                            <a href="compra.html?produto=Pó Compacto&preco=60,00&imagem=img/cards/Pó card.png"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <a href="compra.html?produto=Pó Compacto&preco=60,00&imagem=img/cards/Pó card.png"><button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 Comprar
                             </button></a>
+                        </button></a>
+                        <button type="button" class="btn btn-primary" onclick="adicionarAoCarrinho({
+                            id: 7,
+                            nome: 'Pó Compacto',
+                            preco: 60.00,
+                            imagem: 'img/cards/Pó card.png'
+                        })">
+                               Adicionar ao Carrinho
+
+                           </button>
                             
                         </div>
                        
@@ -202,9 +282,19 @@
                             <p class="card-text" id="corpocartao">
                                 <span class="preco-novo">R$ 45,00 à vista</span>
                             </p>
-                            <a href="compra.html?produto=Base&preco=45,00&imagem=img/cards/Base card.png"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <a href="compra.html?produto=Base&preco=45,00&imagem=img/cards/Base card.png"><button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 Comprar
                             </button></a>
+                        </button></a>
+                        <button type="button" class="btn btn-primary" onclick="adicionarAoCarrinho({
+                            id: 8,
+                            nome: 'Base',
+                            preco: 45.00,
+                            imagem: 'img/cards/Base card.png'
+                        })">
+                               Adicionar ao Carrinho
+
+                           </button>
                         </div>
                        
                     </div>
@@ -223,9 +313,19 @@
                             <p class="card-text" id="corpocartao">
                                 <span class="preco-novo">R$ 40,00 à vista</span>
                             </p>
-                            <a href="compra.html?produto=Corretivo&preco=40,00&imagem=img/cards/Corretivo card.png"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <a href="compra.html?produto=Corretivo&preco=40,00&imagem=img/cards/Corretivo card.png"><button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 Comprar
                             </button></a>
+                        </button></a>
+                        <button type="button" class="btn btn-primary" onclick="adicionarAoCarrinho({
+                            id: 9,
+                            nome: 'Corretivo',
+                            preco: 40.00,
+                            imagem: 'img/cards/Corretivo card.png'
+                        })">
+                               Adicionar ao Carrinho
+
+                           </button>
                         </div>
                       
                     </div>
@@ -236,7 +336,40 @@
     <footer>
         <p>© 2024 MARI MADU MAKEUP.</p>
      </footer>
- 
+     <script>
+        function adicionarAoCarrinho(produto) {
+            // Obtém o carrinho atual ou cria um novo array vazio
+            let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+
+            // Verifica se o produto já existe no carrinho
+            const produtoExistente = carrinho.find(item => item.id === produto.id);
+
+            if (produtoExistente) {
+                // Se o produto já estiver no carrinho, aumenta a quantidade
+                produtoExistente.quantidade += 1;
+            } else {
+                // Caso contrário, adiciona o produto com quantidade 1
+                const novoProduto = {
+                    id: produto.id,
+                    nome: produto.nome,
+                    preco: produto.preco,
+                    imagem: produto.imagem,
+                    quantidade: 1
+                };
+                carrinho.push(novoProduto);
+            }
+
+            // Atualiza o carrinho no localStorage
+            localStorage.setItem("carrinho", JSON.stringify(carrinho));
+
+            alert(`Produto ${produto.nome} adicionado ao carrinho!`);
+            exibirCarrinho(); // Atualiza a exibição do carrinho após adicionar
+        }
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
